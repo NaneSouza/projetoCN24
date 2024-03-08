@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "./Components/Header/Header.jsx"
-import Main from "./Components/Main/Main.jsx"
-import Footer from "./Components/Footer/Footer.jsx"
+// import Main from "./Components/Main/Main.jsx"
+// import Footer from "./Components/Footer/Footer.jsx"
 import {createGlobalStyle} from "styled-components"
 
 
@@ -9,17 +9,22 @@ const GlobalStyle = createGlobalStyle`
   *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box
- 
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  
   }
+  `
+  
 
-header{
+ /* header{
 background-color: #EDD820;
 height:30vh;
 width:98.6vw;
 
 
-}
+} 
+
+
 
 .daHeader{
 display: flex;
@@ -86,7 +91,7 @@ flex-direction: column;
   color: #000000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2rem;
- }
+ } 
 
 
  .daMain1{
@@ -204,16 +209,15 @@ h3{
   font-weight: lighter;
   font-size: 1.5rem;
 }
- 
-`
+  */
+
 
 function App(){
   return(
     <>
     <GlobalStyle />
-    <Header />   
-    <Main />
-    <Footer />
+    <Header/>   
+   
     </>
   )
 }

@@ -1,31 +1,30 @@
 import React from "react"
+import * as S from "../Header/EstiloDaHeader.jsx"
 import Logo from "./imgHeader/CN.png"
 import Game from "./imgHeader/Game.png"
 import Time from "./imgHeader/Time.png"
 
 function Header(){
     return(
-      <header>
+      <S.EstiloDaHeader>
 
-      <section className="daHeader">
+  <S.ImgLogo src={Logo} alt="logo escrito Cartoon Network" />
 
-        <div>
-      <img className="logo" src={Logo} alt="logo escrito Cartoon Network" />
-       </div>
-<div className="navheader0" >
-<nav className="navheader1">
-      <img className="imgjogprog1" src={Game} alt="imagem de um joystick" />
-      <h2 className="nameicons">JOGOS</h2>
-</nav>
-     
-<nav className="navheader2">
-      <img className="imgjogprog2" src={Time} alt="imagem de um relógio" />
-      <h2 className="nameicons">PROGRAMAÇÃO</h2>
-</nav>
-</div>
-      </section>
 
-      </header>
+      <S.Section>
+
+      <S.Div>
+      <S.ImgJogo src={Game} alt="imagem de um joystick" />
+      <S.H2>JOGOS</S.H2>
+      </S.Div>
+
+      <S.Div>
+      <S.ImgProg src={Time} alt="imagem de um relógio" />
+      <S.H2>PROGRAMAÇÃO</S.H2>
+      </S.Div>
+      </S.Section>
+
+      </S.EstiloDaHeader>
         )
         
     }
