@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import * as S from "../Header/EstiloDaHeader.jsx"
 import Logo from "./imgHeader/CN.png"
 import Game from "./imgHeader/Game.png"

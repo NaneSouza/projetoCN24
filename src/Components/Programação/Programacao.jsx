@@ -7,15 +7,15 @@ import Gumball from "../Main/imgMain/Gumball.png"
 import Meninas from "../Main/imgMain/Meninas.png"
 import TomEJerry from "../Main/imgMain/TomEJerry.png"
 
-function Main(){
+function Programacao(){
 
     
 
-    const [galeria2, setgaleria2] = useState
-    ([Gumball,
-    Meninas,
-    TomEJerry
-    ]) 
+    // const [galeria2, setgaleria2] = useState
+    // ([Gumball,
+    // Meninas,
+    // TomEJerry
+    // ]) 
 
     return(
 
@@ -23,19 +23,19 @@ function Main(){
        
        <S.Section1>
 
-<S.Img src={Scooby} alt="Scooby" />
+{/* <S.Img src={Scooby} alt="Scooby" />
 <S.Img src={Ben10} alt="Scooby" />
-<S.Img src={Looney} alt="Scooby" />
+<S.Img src={Looney} alt="Scooby" /> */}
 
 
        </S.Section1>
       
         <S.Section2>
 
-        {galeria2.map ((item)=>(
+        {/* {galeria2.map ((item)=>(
 <S.Img src={item} alt="item"/>
 
-           ) )}
+           ) )} */}
 
 
        </S.Section2>
@@ -44,4 +44,4 @@ function Main(){
         )
   }
   
-  export default Main
+  export default Programacao

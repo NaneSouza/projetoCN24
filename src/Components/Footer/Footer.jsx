@@ -1,51 +1,51 @@
-import React from "react"
-// import WB from "../Footer/imgFooter/WB.png"
-// import Git from "../Footer/imgFooter/Git.png"
-// import Linkedin from "../Footer/imgFooter/Linkedin.png"
+import React, {useState} from "react"
+import * as S from "../Footer/EstiloDoFooter.jsx"
+import WB from "../Footer/imgFooter/WB.png"
+import Git from "../Footer/imgFooter/Git.png"
+import Linkedin from "../Footer/imgFooter/Linkedin.png"
 
-// function Footer(){
-//     return(
-//       <footer>
+function Footer(){
+    return(
+      <footer>
        
-//        <section className="doFooter1">
-//         <div className="imgfooter1">
-//       <img className="imgfooterWB" src={WB} alt="Turma do Scooby Doo" />
-//        </div>
+       <S.Section1>
+        <div>
+      <img src={WB} alt="Logo da Warner Bros" />
+       </div>
 
-//        <div className="Listafooter">
-//       <nav>
-//       <ul>
-//         <li>Sobre nós</li>
-//         <li>Produtos</li>
-//         <li>Personagens</li>
-//       </ul>
-//       </nav>
-//       </div>
+       <div>
+      
+      <S.Ul>
+        <li>Sobre nós</li>
+        <li>Produtos</li>
+        <li>Personagens</li>
+      </S.Ul>
+     
+      </div>
 
-//      <nav className="imgfooter2">
-//      <img className="imggit" src={Git} alt="Turma do Scooby Doo" />
-//      </nav>
+      <S.DivSocial>
+     <img src={Git} alt="logo do GitHub" />
+    
+     <img src={Linkedin} alt="Logo do LinkedIn" />
+    
+     </S.DivSocial>
+     
+       </S.Section1>
 
-//      <nav className="imgfooter2">
-//      <img className="imglinkedin" src={Linkedin} alt="Turma do Ben 10" />
-//      </nav>
+       <S.Section2>
 
-//        </section>
-
-//        <section className="doFooter2">
-
-//       <h3>© 2024 Cartoon Network</h3>
+      <h3>© 2024 Cartoon Network</h3>
 
         
-//        </section>
+       </S.Section2>
 
     
 
 
 
 
-//       </footer>
-//         )
-//   }
+      </footer>
+        )
+  }
   
-//   export default Footer
+  export default Footer
