@@ -26,6 +26,6 @@ padding: 2rem;
 export const Img = styled.img`
 
 height: 30vh;
-width: 24vw;
+width: 26vw;
 
 `

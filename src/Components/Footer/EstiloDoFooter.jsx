@@ -13,6 +13,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 3rem;
+padding-top: 1.7rem;
 
 `
 
