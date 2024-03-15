@@ -24,31 +24,39 @@ import Barebears from "../Programação/ImgProgramação/we-bare-bears.png"
 export default function Programacao() {
 
     const [desenhos, setDesenhos] = useState([
-        { nome: "Hora da Aventura", hora: "5:00h", imagem: Adventure },
-        { nome: "Maçã e Cebola", hora: "6:00h", imagem: Apple },
-        { nome: "Ursinhos em Curso", hora: "7:00h", imagem: Babybears }, 
-        { nome: "Ursinhos sem Curso", hora: "8:00h", imagem: Barebears },
-        { nome: "Ben 10", hora: "09:00h", imagem: Ben10 },
-        { nome: "Clarêncio, o Otimista", hora: "10:00h", imagem: Clarence },
-        { nome: "O Mundo de Greg ", hora: "11:00h", imagem: Craig },
-        { nome: "O Incrível Mundo de Gumball", hora: "12:00h", imagem: Gumball }, 
-        { nome: "Irmão do Jorel", hora: "13:00h", imagem: Jorels },
-        { nome: "Looney Tunes", hora: "14:00h", imagem: Looney },
-        { nome: "Meninas Super Poderosas", hora: "15:00h", imagem: Meninas },
-        { nome: "Looney Tunes Cartoons", hora: "16:00h", imagem: NewLooney},
-        { nome: "Apenas um show", hora: "17:00h", imagem: RegularShow}, 
-        { nome: "Scooby-Doo e Convidados", hora: "18:00h", imagem: Scooby },
-        { nome: "Steven Universo", hora: "19:00h", imagem: Steven },
-        { nome: "Os Jovens Titãs em Ação", hora: "20:00h", imagem: Titans },
-        { nome: "Tom e Jerry", hora: "21:00h", imagem: TomJerry },
-        { nome: "Toon Tubers", hora: "22:00h", imagem: ToonTu }, 
-        { nome: "Vilanesco ", hora: "23:00h", imagem: Villan },
+        { nome: "Hora da Aventura", hora: "5:00h", imagem: Adventure, manha:true, tarde:false, noite:false },
+        { nome: "Maçã e Cebola", hora: "6:00h", imagem: Apple, manha:true, tarde:false, noite:false },
+        { nome: "Ursinhos em Curso", hora: "7:00h", imagem: Babybears, manha:true, tarde:false, noite:false }, 
+        { nome: "Ursinhos sem Curso", hora: "8:00h", imagem: Barebears, manha:true, tarde:false, noite:false },
+        { nome: "Ben 10", hora: "09:00h", imagem: Ben10, manha:true, tarde:false, noite:false },
+        { nome: "Clarêncio, o Otimista", hora: "10:00h", imagem: Clarence, manha:true, tarde:false, noite:false },
+        { nome: "O Mundo de Greg ", hora: "11:00h", imagem: Craig, manha:true, tarde:false, noite:false },
+        { nome: "O Incrível Mundo de Gumball", hora: "12:00h", imagem: Gumball, manha:false, tarde:true, noite:false }, 
+        { nome: "Irmão do Jorel", hora: "13:00h", imagem: Jorels, manha:false, tarde:true, noite:false },
+        { nome: "Looney Tunes", hora: "14:00h", imagem: Looney, manha:false, tarde:true, noite:false },
+        { nome: "Meninas Super Poderosas", hora: "15:00h", imagem: Meninas, manha:false, tarde:true, noite:false },
+        { nome: "Looney Tunes Cartoons", hora: "16:00h", imagem: NewLooney, manha:false, tarde:true, noite:false},
+        { nome: "Apenas um show", hora: "17:00h", imagem: RegularShow, manha:false, tarde:true, noite:false}, 
+        { nome: "Scooby-Doo e Convidados", hora: "18:00h", imagem: Scooby, manha:false, tarde:false, noite:true },
+        { nome: "Steven Universo", hora: "19:00h", imagem: Steven, manha:false, tarde:false, noite:true },
+        { nome: "Os Jovens Titãs em Ação", hora: "20:00h", imagem: Titans, manha:false, tarde:false, noite:true },
+        { nome: "Tom e Jerry", hora: "21:00h", imagem: TomJerry, manha:false, tarde:false, noite:true },
+        { nome: "Toon Tubers", hora: "22:00h", imagem: ToonTu, manha:false, tarde:false, noite:true }, 
+        { nome: "Vilanesco ", hora: "23:00h", imagem: Villan, manha:false, tarde:false, noite:true },
        
     ])
 
-    
+    const desenhoAntesMeioDia = desenhos.filter((item) => item.manha === true)
+
+    const desenhoDepoisMeioDia = desenhos.filter((item) => item.tarde === true)
+
+    const desenhoDepoisNoite = desenhos.filter((item) => item.noite === true)
+
     return (
+
+<>
         <S.Section>
+
             <S.H1>PROGRAMAÇÃO DOS DESENHOS</S.H1>
 
             {desenhos.map((item) => (
@@ -61,7 +69,65 @@ export default function Programacao() {
 
             ))}
 
+          
+            
+            
+
         </S.Section>
+
+        <S.SectionDesManha>
+            <S.TituloH2>DESENHOS DA MANHÃ</S.TituloH2>
+
+            {desenhoAntesMeioDia.map((item) => (
+
+<S.DivManha>   
+<S.HoraManha> {item.hora} </S.HoraManha>
+<S.NomeManha> {item.nome} </S.NomeManha>
+
+</S.DivManha>
+
+
+            ))}
+
+        </S.SectionDesManha>
+
+        <S.SectionDesTarde>
+            <S.TituloH2>DESENHOS DA TARDE</S.TituloH2>
+
+            {desenhoDepoisMeioDia.map((item) => (
+
+<S.DivTarde>   
+<S.HoraTarde> {item.hora} </S.HoraTarde>
+<S.NomeTarde> {item.nome} </S.NomeTarde>
+
+</S.DivTarde>
+
+
+            ))}
+
+        </S.SectionDesTarde>
+
+
+        <S.SectionDesNoite>
+            <S.TituloH2>DESENHOS DA NOITE</S.TituloH2>
+
+            {desenhoDepoisNoite.map((item) => (
+
+<S.DivNoite>   
+<S.HoraNoite> {item.hora} </S.HoraNoite>
+<S.NomeNoite> {item.nome} </S.NomeNoite>
+
+</S.DivNoite>
+
+
+            ))}
+
+            
+
+        </S.SectionDesNoite>
+        
+
+        </>
     )
 }
 

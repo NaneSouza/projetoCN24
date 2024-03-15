@@ -14,6 +14,9 @@ padding: 2rem;
 export const ImgLogo = styled.img`
 height: 10vh;
 width: 12vw;
+&:hover{
+    transform: scale(1.2);
+}
 
 `
 
@@ -36,18 +39,22 @@ export const Div = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-
+&:hover{
+    transform: scale(1.2);
+}
 `
 
 export const ImgJogo = styled.img`
 height: 12vh;
 width: 5vw;
 
+
 `
 
 export const ImgProg = styled.img`
 height: 12vh;
 width: 5vw;
+
 
 `
 

@@ -27,5 +27,8 @@ export const Img = styled.img`
 
 height: 30vh;
 width: 26vw;
+&:hover{
+    transform: scale(1.2);
+}
 
 `
