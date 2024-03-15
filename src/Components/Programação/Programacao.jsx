@@ -24,11 +24,11 @@ import Barebears from "../Programação/ImgProgramação/we-bare-bears.png"
 export default function Programacao() {
 
     const [desenhos, setDesenhos] = useState([
-        { nome: "Hora da Aventura", hora: "6:00h", imagem: Adventure },
-        { nome: "Maçã e Cebola", hora: "7:00h", imagem: Apple },
-        { nome: "Ursinhos em Curso", hora: "8:00h", imagem: Babybears }, 
-        { nome: "Ursinhos sem Curso", hora: "9:00h", imagem: Barebears },
-        { nome: "Ben 10", hora: "10:00h", imagem: Ben10 },
+        { nome: "Hora da Aventura", hora: "5:00h", imagem: Adventure },
+        { nome: "Maçã e Cebola", hora: "6:00h", imagem: Apple },
+        { nome: "Ursinhos em Curso", hora: "7:00h", imagem: Babybears }, 
+        { nome: "Ursinhos sem Curso", hora: "8:00h", imagem: Barebears },
+        { nome: "Ben 10", hora: "09:00h", imagem: Ben10 },
         { nome: "Clarêncio, o Otimista", hora: "10:00h", imagem: Clarence },
         { nome: "O Mundo de Greg ", hora: "11:00h", imagem: Craig },
         { nome: "O Incrível Mundo de Gumball", hora: "12:00h", imagem: Gumball }, 
@@ -48,7 +48,7 @@ export default function Programacao() {
 
     
     return (
-        <section>
+        <S.Section>
             <S.H1>PROGRAMAÇÃO DOS DESENHOS</S.H1>
 
             {desenhos.map((item) => (
@@ -61,7 +61,7 @@ export default function Programacao() {
 
             ))}
 
-        </section>
+        </S.Section>
     )
 }
 

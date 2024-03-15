@@ -1,24 +1,37 @@
 import styled from "styled-components"
 
 
+export const Section = styled.section`
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+background-color: #211921;
+ 
+
+
+
+`
+
 
 export const H1 = styled.h1`
 
-height: 15vh;
-font-size: 1.8rem;
+height: 29vh;
+
+font-size: 1.85rem;
 background-color: #211921;
 color: white;
 display: flex;
-justify-content: start;
+justify-content: center;
 align-items: center;
-padding: 2rem;
-padding-bottom: 1rem;
+padding: 4.05rem;
+/* padding-bottom: 1rem; */
 
 `
 
 
 export const Card = styled.div`
 height: 30vh;
+width: 45vw;
 border: solid 1rem #211921;
 background-color: #EDD820;
 display: flex;
@@ -38,10 +51,10 @@ box-shadow: 0 0 2rem rgba(33, 25, 33, 0.5);
 `
 
 export const H2 = styled.h2`
-font-size: 1.5rem;
+font-size: 1rem;
 
 `
 
 export const H3 = styled.h3`
-font-size: 1.5rem;
+font-size: 1rem;
 `

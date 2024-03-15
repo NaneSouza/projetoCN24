@@ -1,7 +1,6 @@
 import React from "react"
 import Header from "./Components/Header/Header.jsx"
 import Main from "./Components/Main/Main.jsx"
-import Programacao from "../src/Components/Programação/Programacao.jsx"
 import Footer from "./Components/Footer/Footer.jsx"
 import {createGlobalStyle} from "styled-components"
 
@@ -23,7 +22,6 @@ function App(){
     <GlobalStyle />
     <Header/>   
     <Main/>
-    <Programacao/>
     <Footer/>
    
     </>

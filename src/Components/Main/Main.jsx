@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import * as S from "../Main/EstiloDaMain.jsx"
+import Programacao from "../Programação/Programacao.jsx"
 import Scooby from "../Main/imgMain/Scooby.png"
 import Ben10 from "../Main/imgMain/Ben10.png"
 import Looney from "../Main/imgMain/Looney.png"
@@ -39,6 +40,9 @@ function Main(){
 
 
        </S.Section2>
+
+       <Programacao/>
+    
 
       </main>
         )
